@@ -1,4 +1,4 @@
 body {
-    background-image: url("background.png");
-    width: 50px;
+    background: url("../images/background.png");
+    background-size: cover;
 }
