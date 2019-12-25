@@ -2,3 +2,18 @@ body {
     background: url("../images/background.png");
     background-size: cover;
 }
+
+.characters {
+    width: 15%;
+    margin: 10px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: green;
+}
+
+.top-left {
+    position: absolute;
+    top: 11px;
+    left: 81px;
+    color: white;
+  }
