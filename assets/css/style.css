@@ -3,6 +3,12 @@ body {
     background-size: cover;
 }
 
+#title {
+  float: right;
+  margin-right: 50px;
+  color: white;
+}
+
 .characters {
     float: left;
     width: 10%;
@@ -10,6 +16,12 @@ body {
     border-style: solid;
     border-width: 20px;
     border-color: green;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*luke's height*/

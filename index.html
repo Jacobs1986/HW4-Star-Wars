@@ -18,18 +18,22 @@
 
     <!--Link the jquery resource-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
 </head>
 
 <body>
 
+    <h1 class="text-font" id="title">Star Wars RPG!</h1>
+
+    <!--Luke-->
     <div class="container">
-        <a href="#" id="lukeClick"> 
+        <a href="#" id="lukeClick">
             <img src="assets/images/luke skywalker.jpg" alt="Luke Skywalker" class="characters" id="luke">
         </a>
         <div class="character-name" id="luke-name">Luke Skywalker</div>
     </div>
 
+    <!--Leia-->
     <div class="container">
         <a href="#" id="leiaClick">
             <img src="assets/images/Leia Organa Solo.jpg" alt="Leia Organa Solo" class="characters" id="leia">
@@ -37,6 +41,7 @@
         <div class="character-name" id="leia-name">Leia Organa Solo</div>
     </div>
 
+    <!--Darth Vader-->
     <div class="container">
         <a href="#" id="darth-vaderClick">
             <img src="assets/images/Darth Vader.jpeg" alt="Darth Vader" class="characters" id="darth-vader">
@@ -44,12 +49,26 @@
         <div class="character-name" id="darth-vader-name">Darth Vader</div>
     </div>
 
-    <div class="container" id="emperor-palpatineClick">
+    <!--Emperor Palpatine-->
+    <div class="container clearfix" id="emperor-palpatineClick">
         <a href="#">
-            <img src="assets/images/Emperor Palpetine.jpg" alt="Emepeor Palpetine" class="characters" id="emperor-palpetine">
+            <img src="assets/images/Emperor Palpetine.jpg" alt="Emepeor Palpetine" class="characters"
+                id="emperor-palpetine">
         </a>
         <div class="character-name" id="emperor-palpatine-name">Emperor Palpatine</div>
     </div>
+
+   <h2 class="text-font">Your Character</h2>
+   
+   <div class="container enemies">Enemies Available to Fight</div>
+   
+   <div class="container fightarea">
+       Fight Section
+       <br>
+       <button>Attack</button>
+    </div>
+   
+    <div class="container defender">Defender</div>
 
     <!--Link the javascript file-->
     <script src="assets/javascript/game.js"></script>
