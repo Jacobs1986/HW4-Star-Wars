@@ -14,33 +14,33 @@ body {
 
 /*luke's height*/
 #luke {
-    height: 113px;
+    /*height: 113px;*/
 }
 
 /*leia's height*/
 #leia {
-    height: 113px;
+    /*height: 113px;*/
 }
 
 .character-name {
     position: absolute;
     color: white;
-    top: 4%;
+    top: 2%;
   }
 
   /*Names for each of the characters*/
   #luke-name {
-    left: 5%;
+    left: 6%;
   }
 
   #leia-name {
-    left: 25%;
+    left: 24%;
   }
 
   #darth-vader-name {
-    left: 45%;
+    left: 43%;
   }
 
   #emperor-palpatine-name {
-    left: 64%;
+    left: 61%;
   }
