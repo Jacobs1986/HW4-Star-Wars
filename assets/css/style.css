@@ -1,3 +1,5 @@
+/*Audiowide font reference: "Audiowide", cusrsive*/
+
 body {
     background: url("../images/background.png");
     background-size: cover;
@@ -7,6 +9,11 @@ body {
   float: right;
   margin-right: 50px;
   color: white;
+  font-size: 50px;
+}
+
+.text-font {
+  font-family: "Audiowide", cursive;
 }
 
 .characters {
@@ -37,7 +44,7 @@ body {
 .character-name {
     position: absolute;
     color: white;
-    top: 2%;
+    top: 12px;
   }
 
   /*Names for each of the characters*/
@@ -55,4 +62,8 @@ body {
 
   #emperor-palpatine-name {
     left: 43%;
+  }
+
+  .controls {
+    margin-left: 10px;
   }
