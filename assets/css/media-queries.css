@@ -1,0 +1,47 @@
+@media screen and (max-width: 1440px) {
+    .character-name {
+        top: 2.3%;
+    }
+    
+    #luke {
+        height: 81px;
+    }
+    
+    #leia {
+        height: 81px;
+    }
+
+    #darth-vader-name {
+        left: 33%;
+    }
+
+    #emperor-palpatine {
+        left: 45.6%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .character-name {
+        top: 3%;
+    }
+
+    #luke {
+        height: 77px;
+    }
+
+    #leia {
+        height: 77px;
+    }
+
+    #leia-name {
+        left: 17.6%;
+    }
+
+    #darth-vader-name {
+        left: 33%;
+    }
+
+    #emperor-palpatine-name {
+        left: 46%;
+    }
+}
