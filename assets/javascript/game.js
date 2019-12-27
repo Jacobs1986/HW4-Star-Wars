@@ -2,7 +2,8 @@
 //I'm just going to test it out for now
 $("#lukeClick").click(function() {
     console.log("You've selected Luke.");
-    $(".luke").appendTo(".enemies");
+    $("#luke").appendTo(".enemies");
+    $("#luke-name").appendTo(".enemies");
 })
 
 $("#leiaClick").click(function() {
