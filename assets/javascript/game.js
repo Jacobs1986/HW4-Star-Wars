@@ -22,7 +22,7 @@ $("#vader-click").click(function () {
 })
 
 $("#palpatine-click").click(function () {
-    console.log("You have selected Luke.")
+    console.log("You have selected Paplaptine.")
     clickMove("luke");
     clickMove("leia");
     clickMove("vader");
