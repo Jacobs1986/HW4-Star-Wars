@@ -47,21 +47,43 @@ body {
     top: 12px;
   }
 
+  .character-health {
+    position: absolute;
+    top: 138px;
+    color: white;
+  }
+
   /*Names for each of the characters*/
   #luke-name {
     left: 4%;
+  }
+
+  #luke-health {
+    left: 5.9%;
   }
 
   #leia-name {
     left: 17%;
   }
 
+  #leia-health {
+    left: 19%;
+  }
+
   #darth-vader-name {
     left: 31%;
   }
 
+  #darth-vader-health {
+    left: 32%;
+  }
+
   #emperor-palpatine-name {
     left: 43%;
+  }
+
+  #emperor-palpatine-health {
+    left: 45.3%;
   }
 
   .controls {

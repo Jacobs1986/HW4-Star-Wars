@@ -2,6 +2,10 @@
     .character-name {
         top: 2.3%;
     }
+
+    .character-health {
+        top: 113px;
+    }
     
     #luke {
         height: 81px;
@@ -11,12 +15,24 @@
         height: 81px;
     }
 
+    #leia-health {
+        left: 20.5%;
+    }
+
     #darth-vader-name {
         left: 33%;
     }
 
+    #darth-vader-health {
+        left: 34.5%;
+    }
+
     #emperor-palpatine-name {
         left: 45.6%;
+    }
+
+    #emperor-palpatine-health {
+        left: 49.3%;
     }
 }
 
