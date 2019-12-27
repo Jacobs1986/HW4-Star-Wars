@@ -21,6 +21,7 @@ body {
   float: left;
   margin: 10px 10px;
   width: 10%;
+  height: 107.594px;
   border-style: solid;
   border-color: green;
   border-width: 20px;
@@ -28,10 +29,33 @@ body {
 
 .character-name {
   position: relative;
-  top: 0em;
-  left: 0%;
+  top: 11px;
+  left: -11em;
   color: white;
   float: left;
+}
+
+#leia {
+  position: relative;
+  left: -5%;
+}
+
+#darth-vader {
+  position: relative;
+  left: -10%;
+}
+
+#darthvader-name {
+  left: -8.5%;
+}
+
+#palpatine {
+  position: relative;
+  left: -6.5%;
+}
+
+#palpatine-name {
+  left: -15.7%;
 }
 
 .clearfix::after {

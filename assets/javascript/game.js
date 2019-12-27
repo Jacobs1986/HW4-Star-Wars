@@ -2,18 +2,18 @@
 //I'm just going to test it out for now
 $("#lukeClick").click(function() {
     console.log("You've selected Luke.");
-    $("#luke").appendTo(".enemies");
-    $("#luke-name").appendTo(".enemies");
+    $("#leia").appendTo(".enemies").offset({ left: 0 });
 })
 
 $("#leiaClick").click(function() {
     console.log("You've selected Leia.");
+    $("#leia").offset({ left: 1});
+    $("#luke").appendTo(".enemies");
+    $("#darth-vader").appendTo(".enemies").offset({ left: 0});
 })
 
-$("#darth-vaderClick").click(function() {
+$("#darthvaderClick").click(function() {
     console.log("You've selected Darth Vader.");
+    console.log($("#darthvader-pic").height());
 })
 
-$("#emperor-palpatineClick").click(function() {
-    console.log("You've selected Emperor Palpatine.");
-})
