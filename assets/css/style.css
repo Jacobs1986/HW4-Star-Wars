@@ -80,6 +80,17 @@ section {
 }
 
 .enemies {
+  margin-top: 4px;
   position: relative;
-  height: 256px;
+  height: 169px;
+}
+
+.enemy-names {
+  position: relative;
+  bottom: 167px;
+}
+
+.enemy-health {
+  position: relative;
+  bottom: 42px;
 }
