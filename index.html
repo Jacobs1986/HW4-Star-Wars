@@ -28,60 +28,59 @@
 
     <h1 class="text-font" id="title">Star Wars RPG!</h1>
 
-    <!--Characters-->
-    <div class="container clearfix">
-        <!--Luke-->
-        <div class="container character" id="luke">
-            <a href="#" id="lukeClick">
-                <img src="assets/images/luke skywalker.jpg" alt="Luke Skywalker" class="picstyle" id="lukepic">
-            </a>
-            <p class="character-name" id="luke-name">Luke Skywalker</p>
+    <br>
+
+    <!--Character information-->
+    <section class="clearfix" id="character-info">
+        <h2 class="text-font" id="choice">Choose Your Character</h2>
+        <!--Character pictures-->
+        <div class="clearfix" id="character-pictures">
+            <!--Luke-->
+            <a href="#" class="click" id="luke-click"><img src="assets/images/luke skywalker.jpg" alt="Luke Skywalker"
+                    class="picturestyle" id="luke-pic"></a>
+
+            <!--Leia-->
+            <a href="" class="click" id="leia-click"><img src="assets/images/Leia Organa Solo.jpg"
+                    alt="Leia Organa Solo" class="picturestyle" id="leia-pic"></a>
+
+            <!--Darth Vader-->
+            <a href="#" class="click" id="vader-click"><img src="assets/images/Darth Vader.jpeg" alt="Darth Vader" class="picturestyle" id="vader-pic"></a>
+
+            <!--Palpatine-->
+            <a href="#" class="click" id="palpatine-click"><img src="assets/images/Emperor Palpetine.jpg" alt="Palpatine" class="picturestyle" id="palpatine-click"></a>
         </div>
 
-        <!--Leia-->
-        <div class="container character" id="leia">
-            <a href="#" id="leiaClick">
-                <img src="assets/images/Leia Organa Solo.jpg" alt="Leia Organa Solo" class="picstyle" id="leiapic">
-            </a>
-            <p class="character-name" id="leia-name">Leia Organa Solo</p>
+        <!--Character Names-->
+        <div class="clearfix" id="character-names">
+            <!--Luke-->
+            <h3 class="names" id="luke-name">Luke Skywalker</h3>
+
+            <!--Leia-->
+            <h3 class="names" id="leia-name">Leia Organa Solo</h3>
+
+            <!--Darth Vader-->
+            <h3 class="names" id="vader-name">Darth Vader</h3>
+
+            <!--Palpatine-->
+            <h3 class="names" id="palpatine-name">Emperor Palpatine</h3>
         </div>
 
-        <!--Darth Vader-->
-        <div class="container character" id="darth-vader">
-            <a href="#" id="darthvaderClick">
-                <img src="assets/images/Darth Vader.jpeg" alt="Darth Vader" class="picstyle" id="darthvader-pic">
-            </a>
-            <p class="character-name" id="darthvader-name">Darth Vader</p>
+        <!--Character Health-->
+        <div class="clearfix" id="character-health">
+            <p class="health" id="luke-health">150</p>
+            <p class="health" id="leai-health">100</p>
+            <p class="health" id="vader-health">175</p>
+            <p class="health" id="palpatine-health">200</p>
         </div>
+    </section>
 
-        <!--Emperor Palpatine-->
-        <div class="container character" id="palpatine">
-            <a href="#" id="palpatine">
-                <img src="assets/images/Emperor Palpetine.jpg" alt="Palpatine" class="picstyle" id="palpatinepic">
-            </a>
-            <p class="character-name" id="palpatine-name">Emperor Palpatine</p>
+    <!--Battle Area-->
+    <section class="" id="battle-areana">
+        <h3 class="text-font">Your Enemies</h3>
+        <div class="enemies border1">
+
         </div>
-    </div>
-
-    <!--Controls-->
-    <div class="container controls">
-
-        <h2 class="text-font">Your Character</h2>
-
-        <br>
-        <div class="container enemies">
-            <h3 class="text-font">Enemies Available to Fight</h3 class="text-font">
-        </div>
-
-        <div class="container fightarea">
-            <h3 class="text-font">Fight Section</h3>
-            <button>Attack</button>
-        </div>
-        <br>
-        <div class="container defender">
-            <h3 class="text-font">Defender</h3>
-        </div>
-    </div>
+    </section>
 
     <!--Link the javascript file-->
     <script src="assets/javascript/game.js"></script>

@@ -5,11 +5,11 @@ body {
     background-size: cover;
 }
 
-#title {
-  float: right;
-  margin-right: 50px;
-  color: white;
-  font-size: 50px;
+/*borders for styling purporses*/
+.border1 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
 }
 
 .text-font {
@@ -17,45 +17,55 @@ body {
   color: white;
 }
 
-.picstyle {
-  float: left;
-  margin: 10px 10px;
-  width: 10%;
-  height: 107.594px;
-  border-style: solid;
-  border-color: green;
-  border-width: 20px;
-}
-
-.character-name {
-  position: relative;
-  top: 11px;
-  left: -11em;
+#title {
+  float: right;
+  margin-right: 50px;
   color: white;
+  font-size: 50px;
+}
+
+section {
+  margin-left: 10px;
+}
+
+#choice {
+  font-size: 25px;
+}
+
+.picturestyle {
   float: left;
+  width: 12%;
+  height: 121.266px;
+  margin-right: 1%;
+  border-style: solid;
+  border-width: 20px;
+  border-color: green;
 }
 
-#leia {
+#character-names {
   position: relative;
-  left: -5%;
+  bottom: 159px;
 }
 
-#darth-vader {
+.names {
+  float: left;
   position: relative;
-  left: -10%;
+  left: 4%;
+  margin-right: 10%;
+  color: white;
 }
 
-#darthvader-name {
-  left: -8.5%;
-}
-
-#palpatine {
+#character-health {
   position: relative;
-  left: -6.5%;
+  bottom: 35px;
 }
 
-#palpatine-name {
-  left: -15.7%;
+.health {
+  position: relative;
+  float: left;
+  left: 6%;
+  margin-right: 14%;
+  color: white;
 }
 
 .clearfix::after {
@@ -64,10 +74,12 @@ body {
   display: table;
 }
 
-.controls {
-    margin-left: 10px;
-  }
+#battle-arena {
+  position: absolute;
+  top: 33%;
+}
 
 .enemies {
-    height: 200px;
-  }
+  position: relative;
+  height: 256px;
+}
