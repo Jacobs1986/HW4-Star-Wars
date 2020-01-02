@@ -12,6 +12,12 @@ body {
   border-color: red;
 }
 
+.border2 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple;
+}
+
 .text-font {
   font-family: "Audiowide", cursive;
   color: white;

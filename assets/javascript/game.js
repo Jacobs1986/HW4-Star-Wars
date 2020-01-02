@@ -1,3 +1,7 @@
+//Universal variables
+let hero;
+let denfender;
+
 //First I need a code that will display the character that is selected
 
 $("#luke-click").click(function () {
