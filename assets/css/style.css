@@ -85,18 +85,21 @@ section {
   top: 33%;
 }
 
-.enemies {
+.enemies,
+.defender {
   margin-top: 4px;
   position: relative;
   height: 169px;
 }
 
-.enemy-names {
+.enemy-names,
+.defender-name {
   position: relative;
   bottom: 167px;
 }
 
-.enemy-health {
+.enemy-health,
+.defender-health {
   position: relative;
   bottom: 42px;
 }
