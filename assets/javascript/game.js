@@ -88,4 +88,6 @@ $("#attack-button").click(function () {
     //I want the button to FIRST check to see if a hero and an oppenent have been selected.
     //If both the hero and defender variables do NOT equal undefined then the program needs to check to see who has been chosen because the attack power will be different.
     //The heroAttackPower needs to be taken from the defenderHealth and the defenderAttackPower needs to be taken from the hearoHealth.
+    //The heroAttackPower needs to increase.
+    //The defenderHealth then needs to be checked to see if it is equal to or below 0.
 })
