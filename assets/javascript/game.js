@@ -6,12 +6,24 @@ let defenderHealth
 console.log(hero);
 console.log(defender);
 
+//Characters attack power
+let lukePower = 20;
+let leiaPower = 10;
+let vaderPower = 25;
+let palpatinePower = 30;
+
+//Attack area
+let attackPower;
+let heroAttackPower;
+let defenderAttackPower;
+
 //First I need a code that will display the character that is selected
 
 $("#luke-click").click(function () {
     if (hero == undefined) {
         hero = "luke";
         heroHealth = $("#luke-health").text();
+        heroAttackPower = lukePower;
         console.log("You have selected Luke.")
         clickMove("leia");
         clickMove("vader");
@@ -19,6 +31,7 @@ $("#luke-click").click(function () {
     }
     else if (hero !== undefined && defender == undefined) {
         clickMoveDefend("luke");
+        defenderAttackPower = lukePower;
     }
 })
 
@@ -26,13 +39,15 @@ $("#leia-click").click(function () {
     if (hero == undefined) {
         hero = "leia";
         heroHealth = $("#leia-health").text();
+        heroAttackPower = leiaPower;
         console.log("You have selected Leia.")
         clickMove("luke");
         clickMove("vader");
         clickMove("palpatine");
     }
     else if (hero !== undefined && defender == undefined) {
-        clickMoveDefend("leia")
+        clickMoveDefend("leia");
+        defenderAttackPower = leiaPower;
     }
 })
 
@@ -40,13 +55,15 @@ $("#vader-click").click(function () {
     if (hero == undefined) {
         hero = "vader";
         heroHealth = $("#vader-health").text();
+        heroAttackPower = vaderPower;
         console.log("You have selected Darth Vader.")
         clickMove("luke");
         clickMove("leia");
         clickMove("palpatine");
     }
     else if (hero !== undefined && defender == undefined) {
-        clickMoveDefend("vader")
+        clickMoveDefend("vader");
+        defenderAttackPower = vaderPower;
     }
 })
 
@@ -54,13 +71,15 @@ $("#palpatine-click").click(function () {
     if (hero == undefined) {
         hero = "palpatine";
         heroHealth = $("#palpatine-health").text();
+        heroAttackPower = palpatinePower;
         console.log("You have selected Paplaptine.")
         clickMove("luke");
         clickMove("leia");
         clickMove("vader");
     }
     else if (hero !== undefined && defender == undefined) {
-        clickMoveDefend("palpatine")
+        clickMoveDefend("palpatine");
+        defenderAttackPower = palpatinePower;
     }
 })
 
@@ -81,13 +100,28 @@ function clickMoveDefend(character2) {
     defenderHealth = $(`#${character2}-health`).text();
 }
 
-//Attack area
-let heroAttackPower;
-let defenderAttackPower;
+
 $("#attack-button").click(function () {
     //I want the button to FIRST check to see if a hero and an oppenent have been selected.
-    //If both the hero and defender variables do NOT equal undefined then the program needs to check to see who has been chosen because the attack power will be different.
-    //The heroAttackPower needs to be taken from the defenderHealth and the defenderAttackPower needs to be taken from the hearoHealth.
-    //The heroAttackPower needs to increase.
-    //The defenderHealth then needs to be checked to see if it is equal to or below 0.
+    if (hero == undefined || defender == undefined) {
+        alert("You need to select the characters first before you can battle.");
+        return;
+    } else {
+        //The heroAttackPower needs to be taken from the defenderHealth and the defenderAttackPower needs to be taken from the heroHealth. These new values need to be displayed in the appropriate areas.
+        let heroDamage = heroHealth - defenderAttackPower;
+        $(`#${hero}-health`).text(heroDamage);
+        heroHealth = heroDamage;
+
+        let defenderDamage = defenderHealth - heroAttackPower;
+        $(`#${defender}-health`).text(defenderDamage);
+        defenderHealth = defenderDamage;
+        //The heroAttackPower needs to increase.
+        //The health of the two characters need to be checked to see if their health is abover zero
+        if (heroHealth > 0) {
+            heroAttackPower = heroAttackPower + 5;
+        } else {
+            $("#attack-button").attr("disabled", true);
+            console.log("you lose")
+        }
+    }
 })
